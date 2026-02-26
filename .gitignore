@@ -1,9 +1,0 @@
-Math/Lections/**
-Math/Notes/**
-Labs/Test/**
-
-# Keep folder structure
-!Math/Notes/**/
-
-!Math/Notes/**/*.tex
-!Math/Notes/**/*.pdf

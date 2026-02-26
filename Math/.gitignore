@@ -1,0 +1,8 @@
+Lections/**
+Notes/**
+
+# Keep folder structure
+!Notes/**/
+
+!Notes/**/*.tex
+!Notes/**/*.pdf
