@@ -42,17 +42,18 @@ contract Optim
     }    
 
 
-     function ChangeStr(string memory str) public
-     {
-        s = str;
-     }
+    function ChangeStr(string memory str) public
+    {
+    s = str;
+    }
 
 
     function factorial(uint256 n) public pure returns (uint256)
     {
-     if (n == 0)
-     {
-        return 1;
+        if (n == 0)
+        {
+            return 1;
+        }
+        return n * factorial(n - 1);
     }
-    return n * factorial(n - 1);
 }
