@@ -25,17 +25,18 @@ jobs:
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
 
-      - name: Go to needed Lab
-        run: cd Labs/Lab3/ && dir
-
       - name: Show Forge version
+        working-directory: ./Labs/Lab3
         run: forge --version
 
       - name: Run Forge fmt
+        working-directory: ./Labs/Lab3
         run: forge fmt --check
 
       - name: Run Forge build
+        working-directory: ./Labs/Lab3
         run: forge build --sizes
 
       - name: Run Forge tests
+        working-directory: ./Labs/Lab3
         run: forge test -vvv
