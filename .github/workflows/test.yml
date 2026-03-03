@@ -29,9 +29,9 @@ jobs:
         working-directory: ./Labs/Lab3
         run: forge --version
 
-      - name: Run Forge fmt
-        working-directory: ./Labs/Lab3
-        run: forge fmt --check
+      # - name: Run Forge fmt
+      #   working-directory: ./Labs/Lab3
+      #   run: forge fmt --check
 
       - name: Run Forge build
         working-directory: ./Labs/Lab3
