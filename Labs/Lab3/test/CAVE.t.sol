@@ -22,7 +22,7 @@ contract CAVETest is Test
 
     function test_InitialState() public view
     {
-        assertEq(cave.name(), "Klymentiev Maksym Andriyovych Token");
+        assertEq(cave.name(), "CAVE Token");
         assertEq(cave.symbol(), "CAVE-2026");
         assertEq(cave.totalSupply(), 10_000 * PRECISION);
         assertEq(cave.balanceOf(address(this)), 10_000 * PRECISION);

@@ -17,7 +17,7 @@ contract CAVE is ERC20, AccessControl
     event Claimed(address indexed user, uint256 amount);
     event Minted(address indexed to, uint256 amount);
 
-    constructor() ERC20("Klymentiev Maksym Andriyovych Token", "CAVE-2026")
+    constructor() ERC20("CAVE Token", "CAVE-2026")
     {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(OWNER_ROLE, msg.sender);
