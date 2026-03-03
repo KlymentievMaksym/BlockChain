@@ -25,6 +25,9 @@ jobs:
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
 
+      - name: Go to needed Lab
+        run: cd Labs/Lab3/
+
       - name: Show Forge version
         run: forge --version
 
