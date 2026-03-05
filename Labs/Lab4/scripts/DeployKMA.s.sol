@@ -15,14 +15,14 @@ contract DeployKMA is Script
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         address deployer = vm.addr(deployerPrivateKey);
         
-        // vm.startBroadcast(deployerPrivateKey);
+        vm.startBroadcast(deployerPrivateKey);
         
         KMA cave = new KMA();
         
         console.log("KMA Token deployed at:", address(cave));
         console.log("Deployer (Admin):", deployer);
         
-        // vm.stopBroadcast();
+        vm.stopBroadcast();
         
         return cave;
     }
