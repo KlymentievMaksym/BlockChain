@@ -1,3 +1,5 @@
 .gas-snapshot/
 .deps/
 artifacts/
+
+lib/
